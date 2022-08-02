@@ -36,7 +36,7 @@ const tinhDiemTrungBinh = (...array) => {
         sum += Number(value);
         n++
     }
-    đtb = sum / n;
+    đtb = (sum / n).toFixed(2);
     return đtb
 }
 

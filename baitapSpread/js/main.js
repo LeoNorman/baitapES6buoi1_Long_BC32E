@@ -1,7 +1,3 @@
-window.onload = () => {
-    themHieuUng()
-}
-
 const themHieuUng = () => {
     let headingContent = document.querySelector('.heading').innerHTML;
     const arr = [...headingContent]
@@ -16,4 +12,7 @@ const themHieuUng = () => {
     }
     document.querySelector('.heading').innerHTML = html;
 }
-// console.log(arr);
+
+window.onload = () => {
+    themHieuUng()
+}
