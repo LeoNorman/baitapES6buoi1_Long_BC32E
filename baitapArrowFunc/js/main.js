@@ -1,12 +1,5 @@
 const colorList = ['pallet', 'viridian', 'pewter', 'cerulean', 'vermillion', 'lavender', 'celadon', 'saffron', 'fuschia', 'cinnabar']
 
-// window.onload = () => {
-//     renderCacOMau();
-//     document.querySelector('.lavender').onclick = () => {
-//         doiMauNgoiNha('lavender')
-//     }
-// }
-
 const renderCacOMau = () => {
     html = '';
     for (const value of colorList) {
@@ -25,54 +18,13 @@ const renderCacOMau = () => {
 
 renderCacOMau()
 
-document.querySelector('.pallet').onclick = () => {
-    doiMauNgoiNha('pallet');
-    xoaIcon('pallet');
-}
+const mangButton = document.getElementsByTagName('button')
 
-document.querySelector('.viridian').onclick = () => {
-    doiMauNgoiNha('viridian');
-    xoaIcon('viridian');
-}
-
-document.querySelector('.pewter').onclick = () => {
-    doiMauNgoiNha('pewter');
-    xoaIcon('pewter');
-}
-
-document.querySelector('.cerulean').onclick = () => {
-    doiMauNgoiNha('cerulean');
-    xoaIcon('cerulean');
-}
-
-document.querySelector('.vermillion').onclick = () => {
-    doiMauNgoiNha('vermillion');
-    xoaIcon('vermillion');
-}
-
-document.querySelector('.lavender').onclick = () => {
-    doiMauNgoiNha('lavender');
-    xoaIcon('lavender');
-}
-
-document.querySelector('.celadon').onclick = () => {
-    doiMauNgoiNha('celadon');
-    xoaIcon('celadon');
-}
-
-document.querySelector('.saffron').onclick = () => {
-    doiMauNgoiNha('saffron');
-    xoaIcon('saffron');
-}
-
-document.querySelector('.fuschia').onclick = () => {
-    doiMauNgoiNha('fuschia');
-    xoaIcon('fuschia');
-}
-
-document.querySelector('.cinnabar').onclick = () => {
-    doiMauNgoiNha('cinnabar');
-    xoaIcon('cinnabar');
+for(let i = 0; i < 10; i++) {
+    mangButton[i].onclick = () => {
+        doiMauNgoiNha(colorList[i])
+        xoaIcon(colorList[i])
+    }
 }
 
 
